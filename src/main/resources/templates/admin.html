@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>admin</title>
+    <th:block th:insert="layouts :: header"></th:block>
 </head>
 <body>
+<nav th:replace="layouts :: navbar"></nav>
 <h2>Welcome Page</h2>
 <a href="/admin">Admin Page</a>
 <br/>

@@ -1,4 +1,4 @@
-##Spring Boot Exercise 403 after Lecture 405
+##Spring Boot Exercise 403 after Lecture 406
 The application has 3 pages: 
     * a course page, 
     * a teacher page and 

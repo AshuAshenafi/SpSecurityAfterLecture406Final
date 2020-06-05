@@ -25,7 +25,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
                 .antMatchers("/admin").hasRole("ADMIN")
+                .antMatchers("/register").hasRole("ADMIN")
+                .antMatchers("/teacher").hasRole("ADMIN")
+                .antMatchers("/student").hasRole("USER")
                 .antMatchers("/h2-console/**").permitAll()
+                .antMatchers("/secure").permitAll()
                 .antMatchers("/**").hasAnyRole("ADMIN", "USER")
                 .and()
                 .formLogin()

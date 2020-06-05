@@ -42,6 +42,10 @@ public class User {
         this.enabled = enabled;
     }
 
+    public void clearPassword(){
+        this.password = "";
+    }
+
     public long getId() {
         return id;
     }
@@ -102,4 +106,6 @@ public class User {
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
+
+
 }
